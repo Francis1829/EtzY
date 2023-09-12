@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&family=Patua+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    color: #0000;
+}
+.search{
+    width: 1000px;
+    height: 48px;
+    border-radius: 50px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+input{
+    height: 40px;
+    outline: none;
+    border: none!important;
+    width: 95%;
+    padding: 0px 0 0 25px ;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+}
+
+button{
+    border: 0;
+    width: 60px;
+    height: 44px;
+    background-color: #fff;
+    color: #000000;
+    position: relative;
+}
+
+button span{
+    font-size: 30px;
+    z-index: -1;
+}
+
+button::before{
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+z-index: -5;
+background-color: rgb(230, 230, 230);
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+transform: scale(0);
+transition: 0.3s ease-in-out;
+}
+
+button:hover::before {
+transform: scale(1);
+}
+
+button:hover{
+    color: #000;
+    z-index: 1;
+}
+
+button::before:focus{
+    background-color: #000;
+    z-index: 2;
+}
+.s-left ul li a{
+    text-decoration: none;
+    color: #545454;
+    font-weight: 600;
+}
+
+.s-left ul li a i{
+    color: #545454;
+    font-size: 30px;
+}
+.row{
+    margin: 0 0 !important;
+    padding: 0 0 !important;
+}
+.category{
+    border-bottom: 2px solid rgb(194, 194, 194);
+}
+.category ul li a{
+    text-decoration: none;
+     color: #000000;
+    font-size: 13px;   
+}
+
+.category ul li a:hover{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.col{
+    padding: 0!important;
+}
+
+.card1{
+    padding: 8px 4px;
+    width: 243px;
+    height: 300px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card1 img{
+    border-radius: 5px;
+}
+
+.info{
+    color: #020202;
+    font-size: 15px;
+    letter-spacing: .3;
+    line-height: normal;
+    font-weight: 700;
+}
+.card1:hover{
+    box-shadow: 1px 1px 5px 1px  rgb(198, 198, 198) ;
+    border: 3px solid rgb(255, 255, 255);
+}
+.space{
+    padding-bottom: 60px;
+}
+.centereT{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdebd2;
+    font-weight: 300;
+    padding: 30px 0;
+}
+
+.t-img{
+    background-color: #fdebd2;
+}
+
+.read a{
+    color: #000;
+}
+
+.gg-1{
+    width: 50%;
+}
+.gg-1 li:nth-child(1){
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.gg-1 li:nth-child(2){
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.g-btn a{
+padding: 10px 15px;
+border: 2px solid black;
+border-radius: 25px;
+color: #000;
+font-weight: 600;
+}
+
+.bluekeneme{
+    background-color: #fdebd2;
+}
+
+.yees-b{
+    background-color:#d7e6f5;
+}
+.send{
+    border: 1px solid black;
+    width: 500px;
+    border-radius: 30px ;
+}
+
+
+input[type=email]{
+    width: 400px;
+}
+
+.send a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.send a:hover{
+    background-color: #545454;
+}
+
+.foot{
+    background-color: #4d6bc6;
+}
+
+.foot-t-t{
+    color: #fff;
+    line-height: 28px;
+    text-decoration: underline;
+    text-decoration-style: dashed ;
+     text-underline-position: under;
+}
+
+.foot-2{
+    background-color: #2f466c;
+}
+
+.foot-2-t li a{ 
+line-height: 30px;
+color: #fff;
+font-size: 13px;
+text-decoration: none;
+}
+
+.foot-2-t li:nth-child(1){
+    font-size: 18px;
+    padding: 20px 0 10px 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.foot-2-t li a:hover{
+    text-decoration: underline;
+}
+
+.DL-app{
+    padding: 5px 10px;
+    width: 215px;
+    border: 2px solid white;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.icon i{
+    font-size: 30px;
+    color: #fff;
+}
+
+.last-foot{
+    background-color: #232347;
+}
+
+.last1{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.last2{
+    color: #fff;
+    font-size: 14px;
+}
+
+.last2 li{
+    text-decoration: underline;
+    list-style-type: none;
+}
